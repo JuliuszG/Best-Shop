@@ -16,7 +16,7 @@
 }
 .container{
     margin: 0 auto;
-    width: 1200px;
+    width: 1352px;
 }
 a{
     text-decoration: none;
@@ -32,13 +32,11 @@ nav{
     height: 70px;
     box-shadow: 0px 3px 6px #00000029;
 }
-nav .nav-container{
-    width: 1352px;
+nav .container{
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
 }
 .nav-list{
     display: flex;
@@ -552,3 +550,36 @@ nav .nav-container{
 /* Koniec sekcji 5 */
 
 /* Sekcja 6 */
+
+footer{
+    background: var(--color-light-grey);
+    box-shadow: 0px -5px 40px rgba(0, 0, 0, .29);
+    height: 89px;
+}
+footer .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-logo a{
+    font-family: var(--font-rw);
+    font-weight: 300;
+    font-size: 26px;
+    color: var(--color-primary);
+}
+.footer-logo p{
+    margin-top: 7px;
+    font-family: var(--font-os);
+    font-weight: 400;
+    font-size: 11px;
+    color: var(--color-grey);
+}
+.footer-social-icons img{
+    width: 24px;
+    height: 24px;
+}
+.footer-social-icons img:first-child{
+    margin-right: 20px;
+}
+/* Koniec sekcji 6 */
