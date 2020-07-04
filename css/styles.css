@@ -286,15 +286,14 @@ nav .nav-container{
 .small-box-image{
     border: 1px solid #E8E9ED;
     border-radius: 5px;
-    width: 440px;
-    height: 370px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: var(--color-green);
     position: relative;
 }
 .small-box-image img{
-    position: absolute;
-    top: calc(50% - 90px);
-    left: calc(50% - 148px);
     width: 296px;
     height: 208px;
 }
@@ -302,3 +301,123 @@ nav .nav-container{
 /* Koniec sekcji 3 */
 
 /* Sekcja 4 */
+.pricing h2{
+    margin: 100px 0 50px;
+    text-align: center;
+    font-family: var(--font-rw);
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--color-black);
+}
+.pricing-box-container{
+    margin: 0 auto;
+    width: 1266px;
+    display: flex;
+    justify-content: space-between;
+}
+.pricing-box{
+    position: relative;
+    width: 372px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.basic{
+    border: 1px solid var(--color-redish);
+}
+.professional{
+    border: 1px solid var(--color-primary);
+    box-shadow: 5px 10px 27px var(--color-primary-shadow);
+    margin: 0 40px;
+}
+.pricing-box:nth-of-type(2){
+    transform: scale(1.11);
+}
+.professional h3{
+    font-size: 21px;
+}
+.premium{
+    border: 1px solid var(--color-green);
+}
+
+.pricing-box h3{
+    margin: 35px 0 14px;
+    font-family: var(--font-rw);
+    font: 700;
+    color: var(--color-black);
+    font-size: 20px;
+}
+.price{
+    font-family: var(--font-os);
+    font-weight: 300;
+    font-size: 46px;
+}
+.pricing-box:nth-child(1) .price{
+    color: var(--color-redish);
+}
+.pricing-box:nth-child(2) .price{
+    color: var(--color-primary);
+}
+.pricing-box:nth-child(3) .price{
+    color: var(--color-green);
+}
+.pricing-limited{
+    margin-top: 5px;
+    font-family: var(--font-rw);
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--color-black);
+}
+.offer-list{
+    margin: 66px 0 79px;
+}
+.offer-list li{
+    text-align: center;
+    margin-top: 26px;
+    font-family: var(--font-os);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-black);
+}
+.offer-list li:first-child{
+    margin-top: 0;
+}
+.included, .not-included{
+    display: flex;
+}
+.included:before{
+    content: url(../assets/Ckechmark-1.svg);
+    display: block;
+    margin-right: 5px;
+}
+.not-included:before{
+    content: url(../assets/Close.svg);
+    display: block;
+    margin-right: 5px;
+}
+.btn{
+    display: inline-block;
+    border: none;
+    border-radius: 23px;
+    padding: 16px 57px;
+    font-family: var(--font-os);
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--color-white);
+}
+.pricing .btn{
+    position: absolute;
+    bottom: -22px;
+    left: calc(50% - 80px);
+}
+.basic .btn{
+    background: var(--color-redish);
+}
+.professional .btn{
+    background: var(--color-primary);
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
+}
+.premium .btn{
+    background: var(--color-green);
+}
