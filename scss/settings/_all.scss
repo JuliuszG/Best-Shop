@@ -1,0 +1,25 @@
+$color-primary: #08A6E4;
+$color-primary-shadow: rgba(7, 172, 230, .16);
+$color-redish: #FB3B64;
+$color-green: #55DFB4;
+$color-black: #000;
+$color-grey: #A5A5A5;
+$color-light-grey: #F7F7F7;
+$color-white: #fff;
+$os: 'Open Sans', sans-serif;
+$rw: 'Raleway', sans-serif;
+$color-list: $color-redish $color-primary $color-green;
+*{
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto;
+    width: 1352px;
+    @media (max-width: 1352px){
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+a{
+    text-decoration: none;
+}

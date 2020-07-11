@@ -1,0 +1,141 @@
+/* Sekcja 5 */
+
+.contact{
+    margin: 155px 0 44px;
+    @media (max-width: 896px){
+        margin: 77px 0 44px;
+    }
+}
+.contact-container{
+    width: 896px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    @media (max-width:896px){
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.contact-left-side{
+    width: 50%;
+    margin-right: 119px;
+    color: $color-black;
+    @media (max-width: 896px){
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+.contact-left-side h2{
+    @include fontType(rw, 400, 49px);
+}
+.contact-left-side p{
+    @include fontType(os, 400, 1rem);
+    margin: 22px 0 42px;
+    
+}
+.contact-left-box{
+    display: flex;
+    @include fontType(os, 600, 16px, $color-grey);
+    @media (max-width: 896px){
+        flex-direction: column;
+        margin-bottom: 57px;
+    }
+}
+.icon-box{
+    display: flex;
+    align-items: center;
+}
+.box-mail::before{
+    content: url("../assets/Mail\ Icon.svg");
+    display: block;
+    margin-right: 10px;
+}
+.box-phone::before{
+    content: url("../assets/Phone\ Icon.svg");
+    display: block;
+    margin-right: 10px;
+    margin-left: 20px;
+    @media (max-width: 896px){
+        margin: 16px 10px 0 0;
+    }
+}
+.contact-right-side{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    @media (max-width: 896px){
+        width: 100%;
+    }
+}
+.contact-right-side form{
+    display: flex;
+    flex-direction: column;
+}
+.input-grp{
+    display: flex;
+    flex-direction: column;
+}
+.input-grp label{
+    @include fontType(os, 700, 11px, $color-primary);
+    line-height: 0.9rem;
+    letter-spacing: 3px;
+}
+.input-grp input{
+    outline: none;
+    border: none;
+    line-height: 2rem;
+    border-bottom: 1px solid $color-grey;
+}
+.input-grp input:focus{
+    border-color: $color-black;
+}
+.input-grp:first-child input{
+    margin-bottom: 42px;
+}
+.checkbox-grp{
+    margin-top: 30px;
+}
+.checkbox-grp label{
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+.checkbox-grp input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+}
+.check-empty{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $color-white;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: 1px solid #95989A;
+    display: block;
+}
+.checkbox-grp label p{
+    color: $color-grey;
+    margin-left: 30px;
+    @media (max-width: 896px){
+       margin-left: 50px; 
+    }
+}
+.checkbox-grp input:checked + .check-empty{
+    background-image: url("../assets/Checkmark.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contact .btn{
+    background: $color-primary;
+    align-self: flex-end;
+    padding: 20px 97px;
+    margin-top: 20px;
+    box-shadow: 5px 10px 14px $color-primary-shadow;
+}

@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Shop</title>
 </head>
 <body>
@@ -17,6 +16,11 @@
                 <div class="logo">
                     <a href="/">BestShop</a>
                 </div>
+                <button class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <ul class="nav-list">
                     <li><a href="#whyus">why us</a></li>
                     <li><a href="#benefits">benefits</a></li>
@@ -40,7 +44,7 @@
     <!-- Koniec Sekcji 1 -->
 
 
-       <!-- Sekcja 2 -->
+       
        <section class="info" id="whyus">
         <h3>The most popular sales platform in country</h3>
         <div class="info-box-container">
@@ -69,8 +73,7 @@
             </div>
         </div>
     </section>
-    <!-- koniec sekcji 2 -->
-    <!-- Sekcja 3 -->
+   
     <section class="benefits" id="benefits">
         <div class="benefits-container">
         <div class="benefits-box first">
@@ -119,15 +122,16 @@
         
         </div>
     </section>
-    <!-- Koniec sekcji 3 -->
-    <!-- Sekcja 4 -->
+  
     <section class="pricing" id="pricing">
         <h2>Pricing</h2>
         <div class="pricing-box-container">
 
             <div class="pricing-box basic">
-                <h3>Basic</h3>
-                <span class="price">&dollar;0</span>
+                <div class="pricing-box-header">
+                    <h3>Basic</h3>
+                    <span class="price">&dollar;0</span>
+                </div>
                 <ul class="offer-list">
                     <li class="included">100 MB HDD</li>
                     <li class="included">1 Subdomain</li>
@@ -139,9 +143,11 @@
             </div>
 
             <div class="pricing-box professional">
-                <h3>Professional</h3>
-                <span class="price">&dollar;25</span>
-                <span class="pricing-limited">Limited offer</span>
+                <div class="pricing-box-header">
+                    <h3>Professional</h3>
+                    <span class="price">&dollar;25</span>
+                    <span class="pricing-limited">Limited offer</span>
+                </div>
                 <ul class="offer-list">
                     <li class="included">500 MB HDD</li>
                     <li class="included">2 Subdomains</li>
@@ -153,9 +159,11 @@
             </div>
 
             <div class="pricing-box premium">
-                <h3>Premium</h3>
-                <span class="price">&dollar;60</span>
-                <span class="pricing-limited">Limited offer</span>
+                <div class="pricing-box-header">
+                    <h3>Premium</h3>
+                    <span class="price">&dollar;60</span>
+                    <span class="pricing-limited">Limited offer</span>
+                </div>
                 <ul class="offer-list">
                     <li class="included">2 GB HDD</li>
                     <li class="included">5 Subdomains</li>
@@ -168,8 +176,7 @@
 
         </div>     
     </section>
-    <!-- Koniec Sekcji 4 -->
-    <!-- Sekcja 5 -->
+    
     <section class="contact" id="contact">
         <div class="contact-container">
 
@@ -211,9 +218,7 @@
                 </form>
             </div>
         </div>
-    </section>
-    <!-- Koniec sekcji 5 -->
-    <!-- Sekcja 6 -->
+    </section> 
     <footer>
         <div class="container">
             <div class="footer-logo">
@@ -226,6 +231,6 @@
             </div>
         </div>
     </footer>
-    <!-- Koniec sekcji 6 -->
+<script src="./app.js"></script>
 </body>
 </html>

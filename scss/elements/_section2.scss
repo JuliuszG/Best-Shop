@@ -1,0 +1,72 @@
+/* Sekcja 2 */
+@use 'sass:list';
+
+.info h3{
+    @include fontType(rw, 400, 2rem);
+    text-align: center;
+    margin: 100px;
+}
+.info-box-container{
+    margin: 0 auto 120px;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+.info-box{
+    display: flex;
+    flex-direction: column;
+    width: 116px;
+    align-items: center;
+}
+.circle{
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    position: relative;
+}
+@for $i from 1 through 3{
+    .info-box:nth-child(#{$i}) .circle{
+        background: list.nth($color-list, $i);
+    }
+}
+.circle img{
+    position: absolute;
+}
+.info-box:nth-child(1) .circle img{
+    right: -10px;
+}
+.info-box:nth-child(2) .circle img{
+    bottom: calc(50% - 17.5px);
+    right: -20px;
+}
+.info-box:nth-child(3) .circle img{
+    bottom: calc(50% - 24px);
+    right: -20px;
+}
+.info-box strong{
+    margin: 14px 0 19px;
+    @include fontType(rw, 800, 20px);
+}
+.info-box p{
+    @include fontType(rw, 400, 17px, $color-grey);
+    text-align: center;
+}
+@media (max-width: 800px){
+    .info-box-container{
+        margin-bottom: 50px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .info-box{
+        width: 100%;
+    }
+    .info h3{
+        margin: 25px 0;
+    }
+    .info-box:nth-child(2){
+        margin: 25px 0;
+    }
+    .info-box strong{
+        margin: 15px 0 20px;
+    }
+}

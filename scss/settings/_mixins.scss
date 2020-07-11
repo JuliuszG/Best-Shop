@@ -1,0 +1,17 @@
+@mixin fontType($ff, $fw, $fs, $fc : $color-black) {
+    @if $ff == os {
+        font-family: $os;
+    } @else if $ff == rw{
+        font-family: $rw;
+    }
+    font-weight: $fw;
+    font-size: $fs;
+    color: $fc;
+}
+@mixin btn($bg, $br, $pad) {
+    display: inline-block;
+    border: none;
+    background: $bg;
+    border-radius: $br;
+    padding: $pad;
+}
