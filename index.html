@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./app.js" defer></script>
     <title>Best Shop</title>
 </head>
 <body>
@@ -177,6 +178,71 @@
         </div>     
     </section>
     
+  <section class="calc">
+      <h2 class="calc-title">Calculate how much you’ll pay</h2>
+    <div class="calc container">
+        <div class="calc-left">
+            <form>
+                <div class="calc-inputs">
+                    <input type="number" id="quantity" placeholder="Products quantity" min="0">
+                    <input type="number" id="est" placeholder="Estimated orders in month" min="0">
+                    <div class="package">
+                        <span class="pack"> Choose package</span>
+                        <ul class="p-list d-none">
+                            <li>Basic</li>
+                            <li>Professional</li>
+                            <li>Premium</li>
+                        </ul>
+                    </div>
+                    <div class="checkbox-grp">
+                        <label for="acc" class="checkbox-label">
+                            <input type="checkbox" id="acc">
+                            <span class="check-empty"></span>
+                            <p>Accounting</p>
+                        </label>
+
+                        <label for="rent" class="checkbox-label">
+                            <input type="checkbox" id="rent">
+                            <span class="check-empty"></span>
+                            <p>Rental of a payment terminal</p>
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="calc-right">
+            <div class="right-label d-none" id="products">
+                <span>Products</span>
+                <span>20 * $0.5</span>
+                <span>$10</span>
+            </div>
+            <div class="right-label d-none" id="orders">
+                <span>Orders</span>
+                <span>30 * $0.25</span>
+                <span>$7.5</span>
+            </div>
+            <div class="right-label d-none" id="package">
+                <span>Package</span>
+                <span>Premium</span>
+                <span>$60</span>
+            </div>
+            <div class="right-label d-none" id="accounting">
+                <span>Accounting</span>
+                <span>$35</span>
+            </div>
+            <div class="right-label d-none" id="terminal">
+                <span>Terminal</span>
+                <span>$5</span>
+            </div>
+            <div class="calc-total">
+                <span>Total</span>
+                <span class="t-price">$117.5</span>
+            </div>
+        </div>
+    </div>
+  </section>
+
     <section class="contact" id="contact">
         <div class="contact-container">
 
@@ -231,6 +297,5 @@
             </div>
         </div>
     </footer>
-<script src="./app.js"></script>
 </body>
 </html>

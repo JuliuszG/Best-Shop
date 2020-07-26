@@ -75,13 +75,13 @@ nav .container{
     padding: 0;
     width: 20px;
     height: 12px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     border: none;
     outline: none;
     background: inherit;
-    visibility: hidden;
+    z-index: 1;
 }
 .burger span{
     height: 2px;
@@ -91,7 +91,7 @@ nav .container{
 }
 @media (max-width: 800px){
     .burger{
-        visibility: visible;
+        display: flex;
     }
     .nav-list{
         padding: 40px 0 34px;

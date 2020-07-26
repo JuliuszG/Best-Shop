@@ -113,6 +113,8 @@
     display: flex;
 }
 .double-box .benefits-small-box{
+    display: flex;
+    justify-content: center;
     background: $color-white;
     border: 1px solid #E8E9ED;
     border-radius: 5px;
